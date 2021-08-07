@@ -11,6 +11,8 @@
  *
  * @var bool
  */
+
+define( 'WP_USE_THEMES', true );
 try{
 	if (!file_exists('anti_ddos/start.php'))
 		throw new Exception ('anti_ddos/start.php does not exist');
@@ -22,7 +24,8 @@ catch (Exception $ex) {
 
 
 	echo $ex->getMessage();
-define( 'WP_USE_THEMES', true );
+
+
 
 /** Loads the WordPress Environment and Template */
 require __DIR__ . '/wp-blog-header.php';

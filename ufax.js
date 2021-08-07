@@ -140,7 +140,7 @@ function antiddos(request, response, interval, maxrequests) {
  
         //console.log("Host: " + request.headers.host, "user-agent: " + request.headers['user-agent'], "accept: " + request.headers.accept, "accept-language: " + request.headers['accept-language'], "if-modified-since: " + request.headers['if-modified-since'])
     } else {
-        response.redirect(path.join(__dirname + "/index.php"));
+        response.redirect("http://app-43b9700d-50b4-41bc-a241-a50e2135ece1.cleverapps.io/");
         console.log("✔️  " + ip + ", number of requests last " + interval / 1000 + "s : " + nbrq + "/" + maxrequests);
     }
 }

@@ -81,9 +81,11 @@ if(isset($_SESSION['standby'])){
 		$actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 		header("refresh:8,".$actual_link);
 	?>
+	<link href='https://fonts.googleapis.com/css?family=Kanit:400,300&subset=thai,latin' rel='stylesheet' type='text/css'>
 		<style type="text/css">
+		
 			.loading {display: flex; flex-direction: column; align-items: center; } 
-			.loading__msg {font-family: Roboto; font-size: 16px; } 
+			.loading__msg {font-family: Kanit; font-size: 16px; } 
 			.loading__dots {display: flex; flex-direction: row; width: 100%; justify-content: center; margin: 100px 0 30px 0; } 
 			.loading__dots__dot {background-color: #44BBA4; width: 20px; height: 20px; border-radius: 50%; margin: 0 5px; color: #587B7F; } 
 			.loading__dots__dot:nth-child(1) {animation: bounce 1s 1s infinite; } 
